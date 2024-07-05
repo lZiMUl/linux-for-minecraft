@@ -1,0 +1,52 @@
+{
+	"schemaVersion": 1,
+	"id": "linux_for_minecraft",
+	"version": "${version}",
+	"name": "Linux For Minecraft",
+	"description": "Linux for Minecraft is a mod aimed at simulating the Linux environment within the Minecraft game. This mod allows players to experience and utilize Linux operating system features in Minecraft's virtual world, including command-line interfaces, program execution, and more, offering a unique gaming experience.",
+	"authors": [
+		"lZiMUl"
+	],
+	"contributors": [
+		"lZiMUl"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/linux-for-minecraft",
+		"sources": "https://github.com/lzimul/linux-for-minecraft",
+		"issues": "https://github.com/lzimul/linux-for-minecraft/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/linux_for_minecraft/linux_for_minecraft_icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lzimul.linux_for_minecraft.LinuxForMinecraft"
+		],
+		"client": [
+			"com.lzimul.linux_for_minecraft.LinuxForMinecraftClient"
+		]
+	},
+	"mixins": [
+		"linux_for_minecraft.mixins.json",
+		{
+			"config": "linux_for_minecraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": ""
+			}
+		}
+	}
+}

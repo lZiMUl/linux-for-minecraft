@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "com.lzimul.linux_for_minecraft.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"LinuxForMinecraftClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
